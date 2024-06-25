@@ -5,32 +5,97 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #ca1505;
+    
 }
+
+.fundo {
+    position: fixed;
+    background-image: url(icones/Fundo\ Morangos.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1600px;
+    height: 100vh;
+    opacity: 0.21;
+}   
 
 .card {
-    background-color: #ffffff73;
+   
+    position: fixed;
+    max-height: 650px;
+    max-width: 455px;
+    background-color: #eb3b38c4;
     border-radius: 60px;
-    box-shadow: 7px 3px 45px 3px rgba(238, 17, 17, 0);
-    padding: 30px;
+    padding: 25px;
     text-align: center;
-    max-width: 400px;
 }
 
+div {
+    /* Habilitar a barra de rolagem */
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para a barra de rolagem específica do WebKit */
+div::-webkit-scrollbar {
+    width: 12px; /* largura da barra de rolagem */
+  }
+  
+  div::-webkit-scrollbar-track {
+    background:gainsboro; /* cor do fundo da barra de rolagem */
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 30px;
+  }
+  
+  div::-webkit-scrollbar-thumb {
+    background-color:dodgerblue; /* cor da alça da barra de rolagem */
+    border-radius: 10px; /* borda arredondada da alça */
+    border: 2px solid white;
+  }
+  
 .card h1 {
+    
     font-family: 'Georgia', serif;
     color: #ffffffc3;
     font-size: 1.7em;
+    text-align: center;
 }
 
 .card h2 {
+    padding: 0;
+    margin: 0;
     font-family: 'Georgia', serif;
     color: #ffffffc3;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.card h3 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: white;
     font-size: 1.3em;
 }
 
 .card p {
     font-family: 'Georgia', serif;
-    color: #333;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px black;
     font-size: 1.2em;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: -10px;
 }
+
+.card img { 
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}    

@@ -1,48 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #cec7c7af;
+    padding: 0;
+    background: url(Fundos/Fundo\ Casal\ Céu\ Estrelado.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
 }
+
 .card {
-    background-color: #ffffff;
+    background-color: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(3px);
     border-radius: 27px;
-    box-shadow: 7px 3px 45px 3px rgba(238, 17, 17, 0.888);
-    padding: 30px;
-    text-align: center;
-    max-width: 400px;
+    box-shadow: 1px 1px 9px 1px rgba(255, 255, 255, 0.662);
+    width: 500px;
+    height: 700px;
 }
 .card h1 {
     font-family: 'Georgia', serif;
-    color: #ff0000c3;
-    font-size: 1.7em;
+    color: rgb(255, 0, 208);
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 7px;
+    word-spacing: 5px;
 }
 .card p {
-    font-family: 'Georgia', serif;
-    color: #333;
-    font-size: 1.2em;
+  font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
 }
-.heart {
-    margin: 160px;
-    position: relative;
-    height: 160px;
-    width: 100px;
-    background-color: red;
-    border-radius: 200px 200px 0 0;
-    transform: rotate(45deg);
-}
-.heart:before {
-    content: " ";				
+.heart{
+    margin-top: 350px;
+    margin-left: 200px;
+    height: 90px;
+    width: 90px;
+    background: rgb(0, 0, 0);
     position: absolute;
-    height: 160px;
-    width: 100px;
-    background-color: red;
-    border-radius: 200px 200px 0 0;
-    transform: rotate(-90deg);
-    top: 30px;
-    left: -31px;
+    transform: rotate(-45deg);
+    box-shadow: 7px -9px 70px 40px rgb(255, 0, 208); 
+    animation: heart 0.6s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    30%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    70%{
+        transform: rotate(-45deg) scale(0.9);
+    }
 }
 
+.heart:before {
+    content: "";
+    position: absolute;			
+    height: 90px;
+    width: 90px;
+    background: rgb(0, 0, 0);
+    top:-50%;
+    border-radius: 50px;
+}
+
+.heart:after {
+    content: "";
+    position: absolute;			
+    height: 90px;
+    width: 90px;
+    background: rgb(0, 0, 0);
+    right:-50%;
+    border-radius: 50px;
+}
+
+
+.heart:hover::before,
+.heart:hover:after,
+.heart:hover{
+    background: white;
+}
+
+
+.rodape {
+    margin-top: 350px;
+    margin-left: 200px;
+}
+
+.card #rodape {
+    margin-top: 415px;
+    margin-left: 30px;
+    text-align: center;
+}

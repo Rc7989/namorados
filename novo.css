@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background: url(Fundos/Fundo\ Couple\ Sol.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    margin-left: 35%;
+    display: inline-block;
+    /* border: 3px solid red;  */
+    width: 500px;
+    height: 725px;
+    color: white;
+    font-size: 30px;
+    opacity: 0.6;
+    /* box-shadow: 2px 2px 2px black;  */
+}
+
+#texto{
+    margin-bottom: 99%;
+    font-weight: bold;
+    text-align: center;
+    /* border: 3px solid black;  */
+}
+
+#musica{
+    margin-left: 20%;
+    /* border: 3px solid orange; */
+}
